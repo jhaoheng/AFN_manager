@@ -7,8 +7,8 @@
 
 ```
 http_manager *_manager = [http_manager shared];
-    _manager._delegate = self;
-    [_manager sendDataOfRequest:[_manager method_jsonFormatAndUrlIs:@"" andParameters:@{@"foo": @"bar", @"baz": @[@1, @2, @3]}]];
+_manager._delegate = self;
+[_manager sendDataOfRequest:[_manager method_jsonFormatAndUrlIs:@"" andParameters:@{@"foo": @"bar", @"baz": @[@1, @2, @3]}]];
 ```
 
 and delegate
